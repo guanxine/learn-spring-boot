@@ -143,7 +143,7 @@ guanxine@gx:~/work/git/learn-spring-boot/1-create-pom$ jar tvf target/myproject-
 7. application 配置文件
 
 ## 建议
-1. ```@SpringBootApplication``` main class (相当于 ```@EnableAutoConfiguration```,```@ComponentScan```, ```@Configuration```)
+1. ```@SpringBootApplication``` main class (相当于 自动配置```@EnableAutoConfiguration```,bean扫描```@ComponentScan```, 配置```@Configuration```)
 2. 主配置使用```@Configuration``` 标记 main class, 其他配置可以使用 ```@Import```
 3. 使用基于 java 的配置而不是 xml: ```Enable*```, 如果还是使用 xml 建议使用 ```@ImportResource```
 4. 自动配置(Auto-configuration): 使用```@SpringBootApplication```或者```@EnableAutoConfiguration``` 和```@Configuration```的组合

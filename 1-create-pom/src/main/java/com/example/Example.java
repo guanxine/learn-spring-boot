@@ -10,6 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 //@SpringBootApplication　// same as @Configuration @EnableAutoConfiguration @ComponentScan
+
+/*
+
+@Configuration
+@EnableAutoConfiguration
+@Import({ MyConfig.class, MyAnotherConfig.class })
+
+ */
 public class Example {
 
     @RequestMapping("/")
