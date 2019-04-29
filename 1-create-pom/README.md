@@ -147,3 +147,12 @@ guanxine@gx:~/work/git/learn-spring-boot/1-create-pom$ jar tvf target/myproject-
 2. 主配置使用```@Configuration``` 标记 main class, 其他配置可以使用 ```@Import```
 3. 使用基于 java 的配置而不是 xml: ```Enable*```, 如果还是使用 xml 建议使用 ```@ImportResource```
 4. 自动配置(Auto-configuration): 使用```@SpringBootApplication```或者```@EnableAutoConfiguration``` 和```@Configuration```的组合
+
+## 热加载(Hot Swapping)
+1. idea: ctrl+f9
+## spring mvc 自动配置
+1. ContentNegotiatingViewResolver,BeanNameViewResolver
+2. statics resources
+3. Converter,GenericConverter,Formatter
+4. HttpMessageConverters: convert HTTP requests and responses (包括 bean <-> json)
+5. MessageCodesResolver: error code,msg
