@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-k8s
+spec:
+  selector:
+    matchLabels:
+      app: test-k8s
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: test-k8s
+    spec:
+      containers:
+      - name: test-k8s
+        image: dev.kmx.k2data.com.cn:5001/k2data/test-k8s:gx_001
+        ports:
+        - containerPort: 8089
+        volumeMounts:
+        - mountPath: "/usr/share/test-k8s"
+          name: test-k8s-vol
+      volumes:
+      - name: test-k8s-vol
+        emptyDir: {}

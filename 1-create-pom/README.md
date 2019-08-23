@@ -20,6 +20,8 @@ mvn spring-boot:run
 执行
 ```
 mvn clean package
+// 运行
+java -jar target/myproject-0.0.1-SNAPSHOT.jar --debug
 ```
 查看生成jar
 ```
@@ -148,6 +150,25 @@ guanxine@gx:~/work/git/learn-spring-boot/1-create-pom$ jar tvf target/myproject-
 3. 使用基于 java 的配置而不是 xml: ```Enable*```, 如果还是使用 xml 建议使用 ```@ImportResource```
 4. 自动配置(Auto-configuration): 使用```@SpringBootApplication```或者```@EnableAutoConfiguration``` 和```@Configuration```的组合
 
+## 代码布局
+```$xslt
+com
+    +- example
+        +- myapplication
+            +- Application.java ( main method, @SpringBootApplication)
+            
+            +- customer
+                +- Customer.java
+                +- CustomerController.java
+                +- CustomerService.java
+                +- CustomerRepository.java
+            +- oder
+                +- Order.java
+                +- OrderController.java
+                +- OrderService.java
+                +- OrderRepository.java
+```
+
 ## 热加载(Hot Swapping)
 1. idea: ctrl+f9
 ## spring mvc 自动配置
@@ -156,3 +177,26 @@ guanxine@gx:~/work/git/learn-spring-boot/1-create-pom$ jar tvf target/myproject-
 3. Converter,GenericConverter,Formatter
 4. HttpMessageConverters: convert HTTP requests and responses (包括 bean <-> json)
 5. MessageCodesResolver: error code,msg
+
+
+## k8s
+```
+1. kubectl apply -f test-k8s-deployment.yaml
+2. kubectl get pods -l app=test-k8s
+    NAME                        READY   STATUS    RESTARTS   AGE
+    test-k8s-57bcfb7598-4lpgp   1/1     Running   0          8m20s
+    test-k8s-57bcfb7598-rr6fx   1/1     Running   0          8m20s
+3. kubectl describe pod test-k8s-57bcfb7598-4lpgp
+
+```
+
+## application event and listener
+Some listener triggered before the ApplicationContext. 不能使用 @bean, 使用 SpringApplication.addListeners(..)
+
+## external configuration
+可以从 properties,yaml 文件, env, 命令行 读取配置.可以通过以下两种方式
+1. @Value
+2. @ConfigurationProperties 是个对象
+
+### property file
+ConfigFileApplicationListener: file:/config ->(覆盖) file: -> classpath:/config -> classpath:
