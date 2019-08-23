@@ -1,11 +1,23 @@
+# Java class files
 *.class
-.idea/
-*.iml
-target
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+.DS_Store/
+/target
+
+/target
+/target/
+**/target/
+.idea
+
+.DS_Store
