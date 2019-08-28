@@ -200,3 +200,143 @@ Some listener triggered before the ApplicationContext. 不能使用 @bean, 使�
 
 ### property file
 ConfigFileApplicationListener: file:/config ->(覆盖) file: -> classpath:/config -> classpath:
+
++ profile-specific file
+profile-specific files always overriding the non-specific ones
+
+## Logging
+1. --debug: java -jar myapp.jar --debug
+2. application.properties: logging.*
+3. 建议使用 -spring 命名的log配置(logback-spring.xml 比 logback.xml 好)
+
+## 国际化
+
+## JSON
+Jackson is part of spring-boot-starter-json
+Jackson is preferred and default library
+
+## web
+### mvc
+spring-boot-starter-web
+
+
+## security
+
+## sql db
+
+```
+spring.datasource.url=jdbc:mysql://localhost/test
+spring.datasource.username=dbuser
+spring.datasource.password=dbpass
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+```
+
+
+1. spring-boot-starter-jdbc or spring-boot-starter-data-jpa(Hibernate, Spring Data JPA, Spring ORMs)
+2. HikariCP
+3. 至少指定 spring.datasource.url , 否则会使用 embedded database. 
+4. 也可以不指定 spring.datasource.driver-class-name 可以根据 url 推断出来
+5. DataSourceProperties 前缀 spring.datasource.hikari.*, spring.datasource.tomcat.*, and spring.datasource.dbcp2.*
+6. spring data jdbc,h2,JOOQ
+
+## nosql
+1. redis
+    - cache, key-value store
+    - spring-boot-starter-data-redis(java client: lettuce(default)/jedis)
+2. mongoDB
+3. Neo4j
+4. Gemfire
+5. Solr
+6. elasticsearch
+    - spring-boot-starter-data-elasticsearch
+    - connecting by rest client
+    - connecting by Jest(Elasticsearch Java Rest client)
+    - connecting by spring data
+  
+7. cassandra
+8. LDAP
+9. InfluxDB
+
+## caching
+1. Generic
+2. JCache(JSR-107)
+3. EhCache 2.x
+4. Hazelcast
+5. Infinispan
+6. Couchbase
+7. Redis
+8. Caffeine
+9. Simple
+10. None
+
+## Messaging
+1. JMS
+2. AMQP
+3. Kafka
+
+## RestTemplate & WebCient
+
+## Validation
+
+## Email
+
+## Distributed Transactions with JTA
+
+## Hazelcast
+
+## Quartz Scheduler
+
+## Task Execution and Scheduling
+
+## Spring integration
+
+## 
+
+## spring cloud
+- Distributed/versioned configuration
+- Service registration and discovery
+- Routing
+- Service-to-service calls
+- Load balancing
+- Circuit Breakers
+- Distributed messagingi 
+
+### 12-factor applications
+1. Codebase
+- 代码要有代码库, 一个服务对应一个代码库(一份代码库可以部署多个服务，不同环境部署不同版本也是可以的，但是不允许多个服务使用一个代码库), 多个服务靠依赖管理
+2. Dependencies
+- 依赖要显示声明(开发人员从代码库获取代码后, 只需要安装代码运行环境和依赖工具, 然后安装依赖包, 即可开始工作)
+3. Config
+- 配置(不同的部署环境配置可能不同)要和代码分离, 配置文件(散落在各个地方，格式不同，不太好), 环境变量(推荐)
+4. Backing services
+- 依赖的服务(db/mq/cache)都是一种资源(url)
+5. Build,release,run
+- 严格区分 build(可执行包), release(build + config), run
+6. Processes
+- 服务是一个进程, 必须无状态(例如不要使用"粘性session", session 中的数据应该保存在 memcached 和 redis 这样的带有过期时间的缓存中)
+7. Port binding
+- 通过端口暴露服务, 可以让任何应用通过作为 backing services 让另一个应用使用。
+8. Concurrency
+- 通过进程模型进行扩展
+9. Disposability
+- 快速启动和优雅关闭(SIGTERM)
+- web-process: 拒绝所有请求, 并执行当前已经接收的请求, 然后退出。
+- work-process: 将当前任务从队列中退出
+10. Dev/prod parity
+- 保持  dev,staging,prod 环境尽可能一样
+11. Logs
+- 把日志当作时间流, 服务本身不考虑存储自己的输出流。使用标准使出流(开发,实时的看); 线上,输出流通过运行环境截获,一并发处理程序
+- 可以终端实时看, 可义输出到文档. 可以使用 splunk 这样的日志系统索引及分析系统或 Hadoop/Hive 这样的通用数据存储系统
+    + 过去一段时间的特殊时间
+    + 图形化大规模趋势
+    + 根据用户定义的条件实时出发警报
+12. Admin processes
+
+
+### Spring Cloud Context
+Application Context Services
+
+### Spring Cloud Commons
+
+###  Spring Cloud Config

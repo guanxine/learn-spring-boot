@@ -1,11 +1,13 @@
 package com.example;
 
+import com.example.config.KmxProperties;
 import com.example.filter.FilterConfig;
 import com.example.listener.ListenerConfig;
 import com.example.servlet.ServletConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Import;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +21,7 @@ import java.util.Map;
 //@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 // same as @Configuration @EnableAutoConfiguration @ComponentScan
 @SpringBootApplication
+//@EnableConfigurationProperties(KmxProperties.class)
 @ServletComponentScan
 @Import({FilterConfig.class, ServletConfig.class, ListenerConfig.class})
 
