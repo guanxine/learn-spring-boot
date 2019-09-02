@@ -1,0 +1,18 @@
+server:
+  port: 9091
+spring:
+  application:
+    name: app-config-client
+  profiles:
+    active: dev
+logging:
+  level:
+    web: debug
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

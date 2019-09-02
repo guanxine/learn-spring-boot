@@ -1,0 +1,35 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/guanxine/spring-cloud-config.git
+          search-paths: config-test
+          username: guanxin@k2data.com.cn
+          password: aptx4869
+  application:
+    name: app-config
+  profiles:
+    active: dev
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: 9090
+
+
+logging:
+  level:
+    web: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

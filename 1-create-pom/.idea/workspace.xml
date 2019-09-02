@@ -2,19 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e89f3f3-41c0-4fbc-ba95-53d522d66b1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/KmxProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/RestConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/ThirdPartyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/json/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/json/DemoJsonComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spring-config/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Example.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Example.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/src/main/java/com/example/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-config/config-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-config/config-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-config/config-client/src/main/java/com/example/ClientConfigGitApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-config/config-client/src/main/java/com/example/ClientConfigGitApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-config/config-client/src/main/java/com/example/config/ConfigInfoProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-config/config-client/src/main/java/com/example/config/ConfigInfoProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-config/config-client/src/main/java/com/example/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-config/config-client/src/main/java/com/example/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-config/config-client/src/main/java/com/example/controller/ConfigClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-config/config-client/src/main/java/com/example/controller/ConfigClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-config/config-client/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-config/config-client/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-config/config-client/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-config/config-client/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-config/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-config/config-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-config/config-server/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-config/config-server/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-config/config-server/src/main/java/com/example/config/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-config/config-server/src/main/java/com/example/config/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-config/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring-config/config-server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,21 +38,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Example.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="79" column="31" lean-forward="true" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+            <state relative-caret-position="296">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1343">
+              <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom-spring-boot-parent.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="36" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/RestConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-107">
-                <caret line="300" column="16" lean-forward="true" selection-start-line="300" selection-start-column="16" selection-end-line="300" selection-end-column="16" />
+              <first_editor relative-caret-position="437">
+                <caret line="320" column="12" selection-start-line="320" selection-start-column="12" selection-end-line="320" selection-end-column="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -132,10 +168,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="224" />
-    <option name="y" value="111" />
+    <option name="x" value="331" />
+    <option name="y" value="132" />
     <option name="width" value="1751" />
-    <option name="height" value="1004" />
+    <option name="height" value="948" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -151,6 +187,11 @@
             <path>
               <item name="myproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="1-create-pom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="1-create-pom" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myproject" type="b2602c69:ProjectViewProjectNode" />
@@ -189,22 +230,6 @@
             </path>
             <path>
               <item name="myproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1-create-pom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myproject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="1-create-pom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -222,7 +247,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../k2tf-process" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../learn-minio" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -296,7 +321,7 @@
       <workItem from="1557392568747" duration="13321000" />
       <workItem from="1559628683860" duration="572000" />
       <workItem from="1559630270984" duration="1990000" />
-      <workItem from="1566526873853" duration="39630000" />
+      <workItem from="1566526873853" duration="55396000" />
     </task>
     <task id="LOCAL-00001" summary="ignore">
       <created>1556506943650</created>
@@ -333,16 +358,31 @@
       <option name="project" value="LOCAL" />
       <updated>1566554018018</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="12-factor applications">
+      <created>1566985871615</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1566985871615</updated>
+    </task>
+    <task id="LOCAL-00007" summary="delete">
+      <created>1567394608596</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1567394608596</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96942000" />
+    <option name="totallyTimeSpent" value="112708000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="-4" width="1871" height="1084" extended-state="6" />
+    <frame x="49" y="24" width="1871" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29676357" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29676357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -355,10 +395,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.45102042" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.4642857" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.1622449" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.31632653" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32959184" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
@@ -378,10 +418,11 @@
     <MESSAGE value="ignore" />
     <MESSAGE value="filter/servlet/listener" />
     <MESSAGE value="conf" />
-    <option name="LAST_COMMIT_MESSAGE" value="conf" />
+    <MESSAGE value="12-factor applications" />
+    <MESSAGE value="delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Demo.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE.jar!/org/springframework/boot/autoconfigure/session/SessionRepositoryFilterConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -719,42 +760,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="437">
+            <caret line="320" column="12" selection-start-line="320" selection-start-column="12" selection-end-line="320" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" column="31" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom-spring-boot-parent.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="36" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/config/RestConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="340">
           <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#745#905#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/Example.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        <state relative-caret-position="296">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="79" column="31" lean-forward="true" selection-start-line="79" selection-start-column="31" selection-end-line="79" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-107">
-            <caret line="300" column="16" lean-forward="true" selection-start-line="300" selection-start-column="16" selection-end-line="300" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
